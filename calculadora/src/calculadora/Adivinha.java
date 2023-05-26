@@ -31,14 +31,11 @@ public static void mentalista(int adivinha, int numero) {
 		Scanner sc_1 = new Scanner(System.in);
 		numero = sc_1.nextInt();
 		
-		do {
+		while(adivinha != numero) {
 			System.out.println("Qual é o seu numero: ");
 			adivinha = sc_1.nextInt();
-			mentalista(adivinha, numero);	
-		}
-		while(adivinha != numero);		
-		
-		
+			mentalista(adivinha, numero);
+		}		
 	}					
 }
  
