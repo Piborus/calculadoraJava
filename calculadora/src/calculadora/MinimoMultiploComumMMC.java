@@ -18,16 +18,17 @@ public class MinimoMultiploComumMMC {
 		int numMenor = Math.min(num1, num2);
 		int mmc = numMaior;
 
-		for (int i = 0; mmc % numMenor != 0 ; i++) {
+		for (int i = 0; mmc % numMenor != 0; i++) {
 			mmc += numMaior;
 			System.out.println("\nO minimo multiplo comum é: " + mmc);
+			
 		}
 
 		while (mmc % numMenor != 0) {
 			mmc += numMaior;
 		}
 		System.out.println("\nO minimo multiplo comum é: " + mmc);
-
+		main(null);
 	}
 
 }
